@@ -4,14 +4,14 @@ import 'regenerator-runtime/runtime';
 import {
   APP_INIT_ERROR, APP_READY, subscribe, initialize,
   mergeConfig,
-} from '@edx/frontend-platform';
-import { AppProvider, ErrorPage, PageRoute } from '@edx/frontend-platform/react';
+} from 'frontend-platform-vi';
+import { AppProvider, ErrorPage, PageRoute } from 'frontend-platform-vi/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Switch } from 'react-router-dom';
 
-import { messages as footerMessages } from '@edx/frontend-component-footer';
-import { messages as headerMessages } from '@edx/frontend-component-header';
+import { messages as footerMessages } from 'frontend-component-footer-vi';
+import { messages as headerMessages } from 'frontend-component-header-vi';
 
 import appMessages from './i18n';
 import { UserMessagesProvider } from './generic/user-messages';

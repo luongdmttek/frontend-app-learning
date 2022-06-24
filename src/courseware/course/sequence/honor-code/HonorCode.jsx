@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { getConfig, history } from '@edx/frontend-platform';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig, history } from 'frontend-platform-vi';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { ActionRow, Alert, Button } from '@edx/paragon';
 
 import { useModel } from '../../../../generic/model-store';

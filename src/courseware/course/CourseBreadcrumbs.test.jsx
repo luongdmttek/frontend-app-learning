@@ -1,17 +1,17 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { getConfig } from '@edx/frontend-platform';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { getConfig } from 'frontend-platform-vi';
 import { BrowserRouter } from 'react-router-dom';
 import { useModel, useModels } from '../../generic/model-store';
 import CourseBreadcrumbs from './CourseBreadcrumbs';
 
-jest.mock('@edx/frontend-platform');
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi');
+jest.mock('frontend-platform-vi/analytics');
 
 // Remove When Fully rolled out>>>
 jest.mock('../../generic/model-store');
-jest.mock('@edx/frontend-platform/auth');
+jest.mock('frontend-platform-vi/auth');
 getConfig.mockImplementation(() => ({ ENABLE_JUMPNAV: 'true' }));
 getAuthenticatedUser.mockImplementation(() => ({ administrator: true }));
 // ^^^^Remove When Fully rolled out

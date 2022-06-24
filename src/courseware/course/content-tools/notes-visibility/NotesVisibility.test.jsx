@@ -1,16 +1,16 @@
 import React from 'react';
 import { waitFor } from '@testing-library/dom';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import MockAdapter from 'axios-mock-adapter';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import {
   fireEvent, initializeTestStore, logUnhandledRequests, render, screen,
 } from '../../../../setupTest';
 import NotesVisibility from './NotesVisibility';
 
-const originalConfig = jest.requireActual('@edx/frontend-platform').getConfig();
-jest.mock('@edx/frontend-platform', () => ({
-  ...jest.requireActual('@edx/frontend-platform'),
+const originalConfig = jest.requireActual('frontend-platform-vi').getConfig();
+jest.mock('frontend-platform-vi', () => ({
+  ...jest.requireActual('frontend-platform-vi'),
   getConfig: jest.fn(),
 }));
 

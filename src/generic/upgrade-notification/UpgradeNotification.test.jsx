@@ -1,6 +1,6 @@
 import React from 'react';
 import { Factory } from 'rosie';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 
 import {
   fireEvent,
@@ -12,7 +12,7 @@ import {
 import UpgradeNotification from './UpgradeNotification';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 const dateNow = new Date('2021-04-13T11:01:58.000Z');
 jest
   .spyOn(global.Date, 'now')

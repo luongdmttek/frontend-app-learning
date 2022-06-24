@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Card } from '@edx/paragon';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 
 import { useSelector } from 'react-redux';
-import { sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackingLogEvent } from 'frontend-platform-vi/analytics';
 import messages from '../messages';
 import { useModel } from '../../../generic/model-store';
 

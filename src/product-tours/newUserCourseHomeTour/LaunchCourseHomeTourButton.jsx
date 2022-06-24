@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Button, Icon } from '@edx/paragon';
 import { Compass } from '@edx/paragon/icons';
 

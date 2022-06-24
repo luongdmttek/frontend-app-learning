@@ -1,5 +1,5 @@
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import MockAdapter from 'axios-mock-adapter';
 import React from 'react';
 import {

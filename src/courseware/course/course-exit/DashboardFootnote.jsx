@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import {
   FormattedMessage, injectIntl, intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Hyperlink } from '@edx/paragon';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 
 import { useModel } from '../../../generic/model-store';
 

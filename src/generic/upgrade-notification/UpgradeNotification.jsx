@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { sendTrackEvent, sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
-import { FormattedDate, FormattedMessage, injectIntl } from '@edx/frontend-platform/i18n';
+import { sendTrackEvent, sendTrackingLogEvent } from 'frontend-platform-vi/analytics';
+import { FormattedDate, FormattedMessage, injectIntl } from 'frontend-platform-vi/i18n';
 import { Button } from '@edx/paragon';
 import { setLocalStorage } from '../../data/localStorage';
 import { UpgradeButton } from '../upgrade-button';

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage, FormattedDate } from '@edx/frontend-platform/i18n';
+import { FormattedMessage, FormattedDate } from 'frontend-platform-vi/i18n';
 import { PageBanner } from '@edx/paragon';
 
 import { useModel } from '../../generic/model-store';

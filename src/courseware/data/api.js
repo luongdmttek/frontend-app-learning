@@ -1,5 +1,5 @@
-import { camelCaseObject, getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { camelCaseObject, getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient, getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import { getTimeOffsetMillis } from '../../course-home/data/api';
 import { appendBrowserTimezoneToUrl } from '../../utils';
 

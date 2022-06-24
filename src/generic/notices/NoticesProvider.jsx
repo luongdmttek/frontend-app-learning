@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import PropTypes from 'prop-types';
 import { getNotices } from './api';
 /**

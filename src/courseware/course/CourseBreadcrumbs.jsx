@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { getConfig } from '@edx/frontend-platform';
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from 'react-redux';

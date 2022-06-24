@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import React, { useContext, useMemo } from 'react';
-import { AppContext } from '@edx/frontend-platform/react';
+import { AppContext } from 'frontend-platform-vi/react';
 import { ALERT_TYPES, useAlert } from '../../../../generic/user-messages';
 import { useModel } from '../../../../generic/model-store';
 

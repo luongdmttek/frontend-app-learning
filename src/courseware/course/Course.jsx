@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useDispatch } from 'react-redux';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import { breakpoints, useWindowSize } from '@edx/paragon';
 
 import { AlertList } from '../../generic/user-messages';

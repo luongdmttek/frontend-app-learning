@@ -1,6 +1,6 @@
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import { AppContext, ErrorPage } from '@edx/frontend-platform/react';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
+import { AppContext, ErrorPage } from 'frontend-platform-vi/react';
 import { Modal } from '@edx/paragon';
 import PropTypes from 'prop-types';
 import React, {

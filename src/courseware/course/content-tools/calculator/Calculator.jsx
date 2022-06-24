@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Collapsible } from '@edx/paragon';
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import {
   FormattedMessage, injectIntl, intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCalculator, faQuestionCircle, faTimesCircle, faEquals,

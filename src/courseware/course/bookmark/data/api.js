@@ -1,5 +1,5 @@
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient, getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 const bookmarksBaseUrl = `${getConfig().LMS_BASE_URL}/api/bookmarks/v1/bookmarks/`;
 

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import {
   injectIntl, intlShape, isRtl, getLocale,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { useSelector } from 'react-redux';
 
 import { getCourseExitNavigation } from '../../course-exit';

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { camelCaseObject, getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { camelCaseObject, getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import {
   FormattedMessage, injectIntl, intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Lightbulb, MoneyFilled } from '@edx/paragon/icons';
 import {
   Alert, breakpoints, Icon, ModalDialog, Spinner, useWindowSize,

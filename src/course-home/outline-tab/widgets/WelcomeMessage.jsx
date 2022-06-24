@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Alert, Button, TransitionReplace } from '@edx/paragon';
 import truncate from 'truncate-html';
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import {
   FormattedMessage, injectIntl, intlShape, defineMessages,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   Hyperlink, DataTable, CardView, Card,

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Factory } from 'rosie';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 
 import {
   fireEvent, initializeTestStore, render, screen,
 } from '../../../../setupTest';
 import LockPaywall from './LockPaywall';
 
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('Lock Paywall', () => {
   let store;

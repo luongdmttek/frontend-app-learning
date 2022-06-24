@@ -1,4 +1,4 @@
-import { logError, logInfo } from '@edx/frontend-platform/logging';
+import { logError, logInfo } from 'frontend-platform-vi/logging';
 import { getCourseHomeCourseMetadata } from '../../course-home/data/api';
 import {
   addModel, addModelsMap, updateModel, updateModels, updateModelsMap,

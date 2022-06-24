@@ -1,6 +1,6 @@
-import { camelCaseObject, getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { logInfo } from '@edx/frontend-platform/logging';
+import { camelCaseObject, getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { logInfo } from 'frontend-platform-vi/logging';
 import { appendBrowserTimezoneToUrl } from '../../utils';
 
 const calculateAssignmentTypeGrades = (points, assignmentWeight, numDroppable) => {

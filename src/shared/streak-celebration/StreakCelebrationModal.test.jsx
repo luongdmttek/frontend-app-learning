@@ -1,8 +1,8 @@
 import React from 'react';
 import { Factory } from 'rosie';
-import { camelCaseObject, getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { camelCaseObject, getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import { breakpoints } from '@edx/paragon';
 import MockAdapter from 'axios-mock-adapter';
 
@@ -16,7 +16,7 @@ import {
 import StreakModal from './StreakCelebrationModal';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('Loaded Tab Page', () => {
   let mockData;

@@ -1,4 +1,4 @@
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import classNames from 'classnames';
 import React, { useContext, useEffect } from 'react';
 import { useModel } from '../../../../../generic/model-store';

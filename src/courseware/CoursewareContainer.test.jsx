@@ -1,6 +1,6 @@
-import { getConfig, history } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { AppProvider } from '@edx/frontend-platform/react';
+import { getConfig, history } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { AppProvider } from 'frontend-platform-vi/react';
 import { waitForElementToBeRemoved, fireEvent } from '@testing-library/dom';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
@@ -35,7 +35,7 @@ jest.mock(
   () => MockUnit,
 );
 
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 initializeMockApp();
 

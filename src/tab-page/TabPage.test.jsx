@@ -1,7 +1,7 @@
 import React from 'react';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import MockAdapter from 'axios-mock-adapter';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import {
   initializeTestStore, logUnhandledRequests, render, screen,
 } from '../setupTest';

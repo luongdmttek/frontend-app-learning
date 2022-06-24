@@ -1,4 +1,4 @@
-import { logError } from '@edx/frontend-platform/logging';
+import { logError } from 'frontend-platform-vi/logging';
 
 import { getTourData, patchTourData } from './api';
 import {

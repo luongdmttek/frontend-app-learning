@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import {
   Alert, Hyperlink, breakpoints, useWindowSize,
 } from '@edx/paragon';

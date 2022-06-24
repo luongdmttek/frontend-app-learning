@@ -5,15 +5,15 @@ import {
   FormattedMessage,
   injectIntl,
   intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Alert, Button } from '@edx/paragon';
 import { useDispatch } from 'react-redux';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
-import { getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import certMessages from './messages';
 import certStatusMessages from '../../../progress-tab/certificate-status/messages';
 import { requestCert } from '../../../data/thunks';

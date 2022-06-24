@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { logError, logInfo } from '@edx/frontend-platform/logging';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient, getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { logError, logInfo } from 'frontend-platform-vi/logging';
 
 export const getNotices = async () => {
   const authenticatedUser = getAuthenticatedUser();

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import {
   AlertModal,
   Button,
@@ -9,7 +9,7 @@ import {
   Icon,
 } from '@edx/paragon';
 import { Check, ArrowForward } from '@edx/paragon/icons';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { sendActivationEmail } from '../../courseware/data';
 import messages from './messages';
 

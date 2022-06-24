@@ -1,7 +1,7 @@
 import React from 'react';
 import MockAdapter from 'axios-mock-adapter';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { getConfig } from '@edx/frontend-platform';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { getConfig } from 'frontend-platform-vi';
 import { Factory } from 'rosie';
 import {
   render, screen, fireEvent, initializeTestStore, waitFor, authenticatedUser, logUnhandledRequests,

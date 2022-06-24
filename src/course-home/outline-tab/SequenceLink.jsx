@@ -8,7 +8,7 @@ import {
   FormattedTime,
   injectIntl,
   intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { faCheckCircle as fasCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -4,9 +4,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 import { Factory } from 'rosie';
-import { getConfig, history } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { AppProvider } from '@edx/frontend-platform/react';
+import { getConfig, history } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { AppProvider } from 'frontend-platform-vi/react';
 import MockAdapter from 'axios-mock-adapter';
 import { waitForElementToBeRemoved } from '@testing-library/dom';
 import * as popper from '@popperjs/core';
@@ -27,7 +27,7 @@ import { buildOutlineFromBlocks } from '../courseware/data/__factories__/learnin
 import { UserMessagesProvider } from '../generic/user-messages';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 const popperMock = jest.spyOn(popper, 'createPopper');
 
 describe('Course Home Tours', () => {

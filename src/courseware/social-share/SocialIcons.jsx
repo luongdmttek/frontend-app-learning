@@ -11,10 +11,10 @@ import {
   TwitterShareButton,
 } from 'react-share';
 
-import { getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 
 import messages from './messages';
 import { useModel } from '../../generic/model-store';

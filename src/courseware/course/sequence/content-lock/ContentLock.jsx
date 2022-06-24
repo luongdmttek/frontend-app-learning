@@ -2,8 +2,8 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import { history } from '@edx/frontend-platform';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
+import { history } from 'frontend-platform-vi';
 import { Button } from '@edx/paragon';
 
 import messages from './messages';

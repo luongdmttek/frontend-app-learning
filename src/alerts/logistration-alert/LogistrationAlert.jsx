@@ -1,7 +1,7 @@
 import React from 'react';
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
-import { getLoginRedirectUrl } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape, FormattedMessage } from 'frontend-platform-vi/i18n';
+import { getLoginRedirectUrl } from 'frontend-platform-vi/auth';
 import { Alert, Hyperlink } from '@edx/paragon';
 import { WarningFilled } from '@edx/paragon/icons';
 

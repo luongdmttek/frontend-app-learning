@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
-import { getLoginRedirectUrl } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape, FormattedMessage } from 'frontend-platform-vi/i18n';
+import { getLoginRedirectUrl } from 'frontend-platform-vi/auth';
 import { Alert, Button, Hyperlink } from '@edx/paragon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';

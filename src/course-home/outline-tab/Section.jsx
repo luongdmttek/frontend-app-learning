@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Collapsible, IconButton } from '@edx/paragon';
 import { faCheckCircle as fasCheckCircle, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/free-regular-svg-icons';

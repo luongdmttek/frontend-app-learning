@@ -1,5 +1,5 @@
 import { useContext, useState, useCallback } from 'react';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 
 import { UserMessagesContext, ALERT_TYPES } from '../../generic/user-messages';
 

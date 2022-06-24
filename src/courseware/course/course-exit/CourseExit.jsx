@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Button } from '@edx/paragon';
 import { useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';

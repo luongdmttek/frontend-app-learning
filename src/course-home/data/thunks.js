@@ -1,5 +1,5 @@
-import { logError } from '@edx/frontend-platform/logging';
-import { camelCaseObject } from '@edx/frontend-platform';
+import { logError } from 'frontend-platform-vi/logging';
+import { camelCaseObject } from 'frontend-platform-vi';
 import {
   executePostFromPostEvent,
   getCourseHomeCourseMetadata,

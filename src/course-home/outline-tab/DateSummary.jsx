@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { FormattedDate } from '@edx/frontend-platform/i18n';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { FormattedDate } from 'frontend-platform-vi/i18n';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';

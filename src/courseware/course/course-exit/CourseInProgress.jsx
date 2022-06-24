@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Helmet } from 'react-helmet';
 import { useSelector } from 'react-redux';
 import { Alert, Button } from '@edx/paragon';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 
 import { useModel } from '../../../generic/model-store';
 

@@ -1,4 +1,4 @@
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
 import { Alert, Button } from '@edx/paragon';
 import React from 'react';
 import PropTypes from 'prop-types';

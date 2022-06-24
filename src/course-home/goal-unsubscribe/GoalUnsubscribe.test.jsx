@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router';
 import MockAdapter from 'axios-mock-adapter';
-import { getConfig, history } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { AppProvider } from '@edx/frontend-platform/react';
+import { getConfig, history } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { AppProvider } from 'frontend-platform-vi/react';
 import { render, screen } from '@testing-library/react';
 
 import GoalUnsubscribe from './GoalUnsubscribe';
@@ -12,7 +12,7 @@ import initializeStore from '../../store';
 import { UserMessagesProvider } from '../../generic/user-messages';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('GoalUnsubscribe', () => {
   let axiosMock;
