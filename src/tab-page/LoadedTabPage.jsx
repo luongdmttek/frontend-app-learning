@@ -14,6 +14,7 @@ import useEnrollmentAlert from '../alerts/enrollment-alert';
 import useLogistrationAlert from '../alerts/logistration-alert';
 
 import ProductTours from '../product-tours/ProductTours';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 function LoadedTabPage({
   activeTabSlug,
@@ -53,6 +54,10 @@ function LoadedTabPage({
       />
       <Helmet>
         <title>{`${activeTab ? `${activeTab.title} | ` : ''}${title} | ${getConfig().SITE_NAME}`}</title>
+        <script>
+          var user_id = {getAuthenticatedUser.id}
+          console.log(user_id)
+        </script>
       </Helmet>
       {originalUserIsStaff && (
         <InstructorToolbar
