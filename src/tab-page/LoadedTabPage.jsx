@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
 
 import { getConfig } from '@edx/frontend-platform';
 import { useToggle } from '@edx/paragon';
@@ -54,9 +55,8 @@ function LoadedTabPage({
       />
       <Helmet>
         <title>{`${activeTab ? `${activeTab.title} | ` : ''}${title} | ${getConfig().SITE_NAME}`}</title>
-        <script>
-          var user_id = {getAuthenticatedUser.id}
-          console.log(user_id)
+        <script type="application/json" async="true">
+          {`{"user_id": ${getAuthenticatedUser().userId}}`}
         </script>
       </Helmet>
       {originalUserIsStaff && (
