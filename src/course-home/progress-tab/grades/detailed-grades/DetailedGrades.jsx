@@ -41,7 +41,7 @@ function DetailedGrades({ intl }) {
     <Hyperlink
       variant="muted"
       isInline
-      destination={`${getConfig().LMS_BASE_URL}/courses/${courseId}/course`}
+      destination={`/course/${courseId}/home`}
       onClick={logOutlineLinkClick}
       tabIndex={gradesFeatureIsFullyLocked ? '-1' : '0'}
     >

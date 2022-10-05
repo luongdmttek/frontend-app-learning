@@ -12,6 +12,8 @@ import { Switch } from 'react-router-dom';
 
 import { messages as footerMessages } from 'frontend-component-footer-vi';
 import { messages as headerMessages } from 'frontend-component-header-vi';
+import { fetchDiscussionTab, fetchLiveTab } from './course-home/data/thunks';
+import DiscussionTab from './course-home/discussion-tab/DiscussionTab';
 
 import appMessages from './i18n';
 import { UserMessagesProvider } from './generic/user-messages';
@@ -31,6 +33,7 @@ import { fetchCourse } from './courseware/data';
 import initializeStore from './store';
 import NoticesProvider from './generic/notices';
 import PathFixesProvider from './generic/path-fixes';
+import LiveTab from './course-home/live-tab/LiveTab';
 
 subscribe(APP_READY, () => {
   ReactDOM.render(
@@ -46,9 +49,19 @@ subscribe(APP_READY, () => {
                   <OutlineTab />
                 </TabContainer>
               </PageRoute>
+              <PageRoute path="/course/:courseId/live">
+                <TabContainer tab="live" fetch={fetchLiveTab} slice="courseHome">
+                  <LiveTab />
+                </TabContainer>
+              </PageRoute>
               <PageRoute path="/course/:courseId/dates">
                 <TabContainer tab="dates" fetch={fetchDatesTab} slice="courseHome">
                   <DatesTab />
+                </TabContainer>
+              </PageRoute>
+              <PageRoute path="/course/:courseId/discussion/:path*">
+                <TabContainer tab="discussion" fetch={fetchDiscussionTab} slice="courseHome">
+                  <DiscussionTab />
                 </TabContainer>
               </PageRoute>
               <PageRoute

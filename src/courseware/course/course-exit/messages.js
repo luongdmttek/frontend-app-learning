@@ -21,6 +21,11 @@ const messages = defineMessages({
     defaultMessage: 'If you have earned a passing grade, your certificate will be automatically issued.',
     description: 'Text displayed when course certificate is not yet available to be viewed',
   },
+  certificateNotAvailableEndDateBody: {
+    id: 'courseCelebration.certificateBody.notAvailable.endDate',
+    defaultMessage: 'Final grades and any earned certificates are scheduled to be available after {endDate}.',
+    description: 'Shown for learners who have finished a course before grades and certificates are available.',
+  },
   certificateHeaderUnverified: {
     id: 'courseCelebration.certificateHeader.unverified',
     defaultMessage: 'You must complete verification to receive your certificate.',
@@ -70,11 +75,6 @@ const messages = defineMessages({
     id: 'courseExit.dashboardLink',
     defaultMessage: 'Dashboard',
     description: 'Link to user’s dashboard',
-  },
-  downloadButton: {
-    id: 'courseCelebration.downloadButton',
-    defaultMessage: 'Download my certificate',
-    description: 'Button to download the course certificate',
   },
   endOfCourseDescription: {
     id: 'courseExit.endOfCourseDescription',

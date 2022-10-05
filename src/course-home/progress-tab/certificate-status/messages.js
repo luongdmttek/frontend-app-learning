@@ -61,11 +61,6 @@ const messages = defineMessages({
     defaultMessage: 'Showcase your accomplishment on LinkedIn or your resumé today. You can download your certificate now and access it any time from your Dashboard and Profile.',
     description: 'Recommending an action for learner when course certificate is available',
   },
-  downloadableButton: {
-    id: 'progress.certificateStatus.downloadableButton',
-    defaultMessage: 'Download my certificate',
-    description: 'Button text when learner certifcate status is downloadable',
-  },
   viewableButton: {
     id: 'progress.certificateStatus.viewableButton',
     defaultMessage: 'View my certificate',
@@ -75,6 +70,11 @@ const messages = defineMessages({
     id: 'progress.certificateStatus.notAvailableHeader',
     defaultMessage: 'Certificate status',
     description: 'Header text when the certifcate is not available',
+  },
+  notAvailableEndDateBody: {
+    id: 'progress.certificateBody.notAvailable.endDate',
+    defaultMessage: 'Final grades and any earned certificates are scheduled to be available after {endDate}.',
+    description: 'Shown for learners who have finished a course before grades and certificates are available.',
   },
   upgradeHeader: {
     id: 'progress.certificateStatus.upgradeHeader',
