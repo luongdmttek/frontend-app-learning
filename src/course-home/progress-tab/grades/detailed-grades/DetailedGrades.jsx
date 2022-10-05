@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { getConfig } from 'frontend-platform-vi';
 import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
