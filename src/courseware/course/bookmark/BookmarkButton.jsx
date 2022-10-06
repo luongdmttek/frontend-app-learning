@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { StatefulButton } from '@edx/paragon';
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
 import { useDispatch } from 'react-redux';
 import BookmarkOutlineIcon from './BookmarkOutlineIcon';
 import BookmarkFilledIcon from './BookmarkFilledIcon';

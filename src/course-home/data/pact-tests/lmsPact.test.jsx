@@ -1,6 +1,6 @@
 import { Pact, Matchers } from '@pact-foundation/pact';
 import path from 'path';
-import { mergeConfig, getConfig } from '@edx/frontend-platform';
+import { mergeConfig, getConfig } from 'frontend-platform-vi';
 
 import {
   getCourseHomeCourseMetadata,

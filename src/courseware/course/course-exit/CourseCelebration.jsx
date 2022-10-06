@@ -4,7 +4,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import {
   FormattedDate, FormattedMessage, injectIntl, intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Helmet } from 'react-helmet';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -15,8 +15,8 @@ import {
   useWindowSize,
 } from '@edx/paragon';
 import { CheckCircle } from '@edx/paragon/icons';
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 import CelebrationMobile from './assets/celebration_456x328.gif';
 import CelebrationDesktop from './assets/celebration_750x540.gif';

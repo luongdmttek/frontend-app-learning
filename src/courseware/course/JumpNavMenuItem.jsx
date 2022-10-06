@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { history } from '@edx/frontend-platform';
+import { history } from 'frontend-platform-vi';
 import { MenuItem } from '@edx/paragon';
 
 import {
   sendTrackingLogEvent,
   sendTrackEvent,
-} from '@edx/frontend-platform/analytics';
+} from 'frontend-platform-vi/analytics';
 
 export default function JumpNavMenuItem({
   title,

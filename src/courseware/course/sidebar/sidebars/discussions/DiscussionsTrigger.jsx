@@ -1,5 +1,5 @@
-import { ensureConfig, getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { ensureConfig, getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Icon } from '@edx/paragon';
 import { QuestionAnswer } from '@edx/paragon/icons';
 import PropTypes from 'prop-types';

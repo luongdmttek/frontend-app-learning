@@ -1,5 +1,5 @@
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import { breakpoints } from '@edx/paragon';
 
 import MockAdapter from 'axios-mock-adapter';
@@ -17,7 +17,7 @@ import { ID } from './index';
 import NotificationTray from './NotificationTray';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('NotificationTray', () => {
   let axiosMock;

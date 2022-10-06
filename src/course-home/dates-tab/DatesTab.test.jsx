@@ -2,10 +2,10 @@ import React from 'react';
 import { Route } from 'react-router';
 import MockAdapter from 'axios-mock-adapter';
 import { Factory } from 'rosie';
-import { getConfig, history } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { AppProvider } from '@edx/frontend-platform/react';
+import { getConfig, history } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { AppProvider } from 'frontend-platform-vi/react';
 import { waitForElementToBeRemoved } from '@testing-library/dom';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -19,7 +19,7 @@ import { appendBrowserTimezoneToUrl } from '../../utils';
 import { UserMessagesProvider } from '../../generic/user-messages';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('DatesTab', () => {
   let axiosMock;

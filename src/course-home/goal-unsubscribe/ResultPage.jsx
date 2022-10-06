@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { getConfig } from '@edx/frontend-platform';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Button, Hyperlink } from '@edx/paragon';
 
 import messages from './messages';

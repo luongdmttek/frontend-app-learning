@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 
 import messages from './messages';
 import Timeline from './timeline/Timeline';

@@ -1,5 +1,5 @@
-import { ensureConfig, getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { ensureConfig, getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import React, { useContext } from 'react';
 import { useModel } from '../../../../../generic/model-store';
 import SidebarBase from '../../common/SidebarBase';

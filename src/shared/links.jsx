@@ -1,7 +1,7 @@
 import React from 'react';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { getConfig } from '@edx/frontend-platform';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { getConfig } from 'frontend-platform-vi';
 import { Hyperlink } from '@edx/paragon';
 
 import messages from '../courseware/course/course-exit/messages';

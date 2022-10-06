@@ -7,7 +7,7 @@ import {
   FormattedTime,
   injectIntl,
   intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Tooltip, OverlayTrigger } from '@edx/paragon';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

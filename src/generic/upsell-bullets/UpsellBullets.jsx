@@ -1,8 +1,8 @@
 import React from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
-import { getConfig } from '@edx/frontend-platform';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
+import { getConfig } from 'frontend-platform-vi';
 
 function CheckmarkBullet() {
   return (

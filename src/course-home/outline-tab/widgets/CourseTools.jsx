@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { sendTrackingLogEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBookmark, faCertificate, faInfo, faCalendar, faStar,

@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 
 // Does not block on answer
 export function postCelebrationComplete(courseId, data) {

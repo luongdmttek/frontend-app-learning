@@ -1,5 +1,5 @@
 import React from 'react';
-import { history } from '@edx/frontend-platform';
+import { history } from 'frontend-platform-vi';
 import {
   render, screen, fireEvent, initializeMockApp,
 } from '../../../../setupTest';

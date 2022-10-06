@@ -1,5 +1,5 @@
 import React from 'react';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import PropTypes from 'prop-types';
 import { Alert, Button } from '@edx/paragon';
 import { Info, WarningFilled } from '@edx/paragon/icons';

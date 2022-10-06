@@ -1,4 +1,4 @@
-import { injectIntl } from '@edx/frontend-platform/i18n';
+import { injectIntl } from 'frontend-platform-vi/i18n';
 import PropTypes from 'prop-types';
 import React from 'react';
 

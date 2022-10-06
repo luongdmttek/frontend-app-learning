@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import {
   initializeMockApp,
   render,
@@ -13,7 +13,7 @@ jest.mock('./api', () => ({
   getNotices: jest.fn(),
 }));
 
-jest.mock('@edx/frontend-platform', () => ({
+jest.mock('frontend-platform-vi', () => ({
   getConfig: jest.fn(),
 }));
 

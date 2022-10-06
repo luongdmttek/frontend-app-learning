@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import PageLoading from '../../../generic/PageLoading';
 import { useModel } from '../../../generic/model-store';
 

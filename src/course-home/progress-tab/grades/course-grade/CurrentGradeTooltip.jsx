@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import {
   getLocale, injectIntl, intlShape, isRtl,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { OverlayTrigger, Popover } from '@edx/paragon';
 
 import { useModel } from '../../../../generic/model-store';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { getConfig } from '@edx/frontend-platform';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { CheckCircle, WarningFilled, WatchFilled } from '@edx/paragon/icons';
 import { Hyperlink, Icon } from '@edx/paragon';
 

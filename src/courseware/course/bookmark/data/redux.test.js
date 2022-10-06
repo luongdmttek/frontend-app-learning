@@ -1,7 +1,7 @@
 import MockAdapter from 'axios-mock-adapter';
 
-import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
-import { getConfig } from '@edx/frontend-platform';
+import { getAuthenticatedHttpClient, getAuthenticatedUser } from 'frontend-platform-vi/auth';
+import { getConfig } from 'frontend-platform-vi';
 
 import * as thunks from './thunks';
 

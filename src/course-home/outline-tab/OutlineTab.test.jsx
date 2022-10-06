@@ -3,9 +3,9 @@
  */
 import React from 'react';
 import { Factory } from 'rosie';
-import { getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent, sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent, sendTrackingLogEvent } from 'frontend-platform-vi/analytics';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import MockAdapter from 'axios-mock-adapter';
 import Cookies from 'js-cookie';
 import userEvent from '@testing-library/user-event';
@@ -23,7 +23,7 @@ import OutlineTab from './OutlineTab';
 import LoadedTabPage from '../../tab-page/LoadedTabPage';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('Outline Tab', () => {
   let axiosMock;

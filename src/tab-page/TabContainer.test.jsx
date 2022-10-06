@@ -1,5 +1,5 @@
 import React from 'react';
-import { history } from '@edx/frontend-platform';
+import { history } from 'frontend-platform-vi';
 import { Route } from 'react-router';
 import { initializeTestStore, render, screen } from '../setupTest';
 import { TabContainer } from './index';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Factory } from 'rosie';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 import { breakpoints } from '@edx/paragon';
 import {
   loadUnit, render, screen, fireEvent, waitFor, initializeTestStore,
@@ -9,7 +9,7 @@ import SidebarContext from '../sidebar/SidebarContext';
 import Sequence from './Sequence';
 import { fetchSequenceFailure } from '../../data/slice';
 
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('Sequence', () => {
   let mockData;

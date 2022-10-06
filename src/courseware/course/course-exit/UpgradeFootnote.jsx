@@ -2,10 +2,10 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import {
   FormattedDate, FormattedMessage, injectIntl, intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import { Hyperlink } from '@edx/paragon';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 

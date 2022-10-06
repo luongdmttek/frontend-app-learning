@@ -3,8 +3,8 @@ import { screen, render } from '@testing-library/react';
 import JumpNavMenuItem from './JumpNavMenuItem';
 import { fireEvent } from '../../setupTest';
 
-jest.mock('@edx/frontend-platform');
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi');
+jest.mock('frontend-platform-vi/analytics');
 
 const mockData = {
   sectionId: 'block-v1:edX+DemoX+Demo_Course+type@chapter+block@interactive_demonstrations',

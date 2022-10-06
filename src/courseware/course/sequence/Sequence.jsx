@@ -7,10 +7,10 @@ import classNames from 'classnames';
 import {
   sendTrackEvent,
   sendTrackingLogEvent,
-} from '@edx/frontend-platform/analytics';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/analytics';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { useSelector } from 'react-redux';
-import { history } from '@edx/frontend-platform';
+import { history } from 'frontend-platform-vi';
 import SequenceExamWrapper from '@edx/frontend-lib-special-exams';
 import { breakpoints, useWindowSize } from '@edx/paragon';
 

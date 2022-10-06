@@ -1,8 +1,8 @@
 import React from 'react';
 import MockAdapter from 'axios-mock-adapter';
 import { Factory } from 'rosie';
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import { waitFor } from '@testing-library/react';
 
 import { fetchCourse } from '../../data';
@@ -19,7 +19,7 @@ import CourseInProgress from './CourseInProgress';
 import CourseNonPassing from './CourseNonPassing';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 describe('Course Exit Pages', () => {
   let axiosMock;

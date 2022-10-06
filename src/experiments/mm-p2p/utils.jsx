@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { useContext } from 'react';
-import { AppContext } from '@edx/frontend-platform/react';
+import { AppContext } from 'frontend-platform-vi/react';
 import util from 'util';
 
 export const isMobile = () => {

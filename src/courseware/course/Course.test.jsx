@@ -8,7 +8,7 @@ import { handleNextSectionCelebration } from './celebration';
 import * as celebrationUtils from './celebration/utils';
 import Course from './Course';
 
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 const recordFirstSectionCelebration = jest.fn();
 celebrationUtils.recordFirstSectionCelebration = recordFirstSectionCelebration;

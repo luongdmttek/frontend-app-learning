@@ -1,4 +1,4 @@
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Icon } from '@edx/paragon';
 import { WatchOutline } from '@edx/paragon/icons';
 import classNames from 'classnames';

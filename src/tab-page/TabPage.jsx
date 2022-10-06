@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router';
 
-import Footer from '@edx/frontend-component-footer';
+import Footer from 'frontend-component-footer-vi';
 import { Toast } from '@edx/paragon';
-import { LearningHeader as Header } from '@edx/frontend-component-header';
+import { LearningHeader as Header } from 'frontend-component-header-vi';
 import PageLoading from '../generic/PageLoading';
 import { getAccessDeniedRedirectUrl } from '../shared/access';
 import { useModel } from '../generic/model-store';

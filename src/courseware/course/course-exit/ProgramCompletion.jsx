@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getConfig } from '@edx/frontend-platform';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Alert, Button, Hyperlink } from '@edx/paragon';
 import certImage from '../../../generic/assets/edX_certificate.png';
 import messages from './messages';

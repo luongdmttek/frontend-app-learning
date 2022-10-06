@@ -8,7 +8,7 @@ import {
   intlShape,
   isRtl,
   getLocale,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 
 import { useSelector } from 'react-redux';
 import { getCourseExitNavigation } from '../../course-exit';

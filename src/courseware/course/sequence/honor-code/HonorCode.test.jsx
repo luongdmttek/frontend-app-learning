@@ -1,6 +1,6 @@
 import React from 'react';
-import { getConfig, history } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig, history } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import MockAdapter from 'axios-mock-adapter';
 import { Factory } from 'rosie';
 
@@ -10,8 +10,8 @@ import {
 import HonorCode from './HonorCode';
 
 initializeMockApp();
-jest.mock('@edx/frontend-platform', () => ({
-  ...jest.requireActual('@edx/frontend-platform'),
+jest.mock('frontend-platform-vi', () => ({
+  ...jest.requireActual('frontend-platform-vi'),
   history: {
     push: jest.fn(),
   },
