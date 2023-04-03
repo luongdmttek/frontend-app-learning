@@ -448,9 +448,9 @@
   "exam.apiError.supportText.withLink": "Nếu sự cố vẫn tiếp diễn, vui lòng liên hệ với {supportLink} để được hỗ trợ và quay lại bài kiểm tra sau khi bạn nhận được hướng dẫn thêm.",
   "exam.apiError.default": "Đã xảy ra lỗi hệ thống với bài kiểm tra của bạn.",
   "exam.apiError.supportText.withoutLink": "If the issue persists, please reach out to support for assistance, and return to the exam once you receive further instructions.",
-  "exam.aria.hideTimer": "Ẩn hẹn giờ",
-  "exam.aria.showTimer": "Hiển thị hẹn giờ",
-  "exam.aria.examTimerAndEndExamButton": "Nút hẹn giờ kiểm tra và kết thúc kiểm tra",
+  "exam.aria.hideTimer": "Ẩn thời gian",
+  "exam.aria.showTimer": "Hiển thị thời gian",
+  "exam.aria.examTimerAndEndExamButton": "Nút thời gian kiểm tra và kết thúc kiểm tra",
   "exam.proctoredExamDenied": "Bạn không có quyền truy cập vào các kỳ thi giám sát với đăng ký hiện tại của bạn.",
   "exam.DownloadProctoringProviderSoftwareModal.title": "Không thể bắt đầu thi",
   "exam.DownloadProctoringProviderSoftwareModal.body": "Bạn phải hoàn thành thiết lập giám thị trước khi có thể bắt đầu kỳ thi.",
@@ -588,7 +588,7 @@
   "exam.examTimer.text1": "Bạn đang làm \"",
   "exam.examTimer.text2": "\" với hình thức {examType}. ",
   "exam.examTimer.showLess": "Đồng hồ bên phải hiển thị thời gian còn lại trong bài kiểm tra. Để được tính điểm, bạn phải chọn \"Gửi\" cho mỗi câu hỏi trước khi chọn \"Kết thúc bài kiểm tra của tôi\" ",
-  "exam.examTimer.showLessLink": "Ẩn",
+  "exam.examTimer.showLessLink": "Thu gọn",
   "exam.examTimer.showMoreLink": "Xem thêm",
   "exam.examTimer.endExamBtn": "Kết thúc bài kiểm tra của tôi"
 }
