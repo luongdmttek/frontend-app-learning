@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 
 import { ALERT_TYPES, AlertList } from '../generic/user-messages';
 import Alert from '../generic/user-messages/Alert';
 import MasqueradeWidget from './masquerade-widget';
 import { useAccessExpirationMasqueradeBanner } from '../alerts/access-expiration-alert';
 import { useCourseStartMasqueradeBanner } from '../alerts/course-start-alert';
+import messages from './messages';
 
 function getInsightsUrl(courseId) {
   const urlBase = getConfig().INSIGHTS_BASE_URL;
@@ -44,7 +46,7 @@ function getLegacyWebUrl(canViewLegacyCourseware, courseId, unitId) {
   return `${getConfig().LMS_BASE_URL}/courses/${courseId}/jump_to/${unitId}?experience=legacy`;
 }
 
-export default function InstructorToolbar(props) {
+function InstructorToolbar({courseId, unitId, canViewLegacyCourseware, tab, intl}) {
   // This didMount logic became necessary once we had a page that does a redirect on a quick exit.
   // As a result, it unmounts the InstructorToolbar (which will be remounted by the new component),
   // but the InstructorToolbar's MasqueradeWidget has an outgoing request. Since it is unmounted
@@ -59,12 +61,12 @@ export default function InstructorToolbar(props) {
     return () => setDidMount(false);
   });
 
-  const {
-    courseId,
-    unitId,
-    canViewLegacyCourseware,
-    tab,
-  } = props;
+  // const {
+  //   courseId,
+  //   unitId,
+  //   canViewLegacyCourseware,
+  //   tab,
+  // } = props;
 
   const urlInsights = getInsightsUrl(courseId);
   const urlLegacy = getLegacyWebUrl(canViewLegacyCourseware, courseId, unitId);
@@ -84,7 +86,7 @@ export default function InstructorToolbar(props) {
           {(urlLegacy || urlStudio || urlInsights) && (
             <>
               <hr className="border-light" />
-              <span className="mr-2 mt-1 col-form-label">View course in:</span>
+              <span className="mr-2 mt-1 col-form-label">{intl.formatMessage(messages.viewCourseIn)}</span>
             </>
           )}
           {urlLegacy && (
@@ -130,6 +132,7 @@ InstructorToolbar.propTypes = {
   unitId: PropTypes.string,
   canViewLegacyCourseware: PropTypes.bool,
   tab: PropTypes.string,
+  intl: intlShape.isRequired,
 };
 
 InstructorToolbar.defaultProps = {
@@ -138,3 +141,4 @@ InstructorToolbar.defaultProps = {
   canViewLegacyCourseware: undefined,
   tab: '',
 };
+export default injectIntl(InstructorToolbar);

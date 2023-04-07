@@ -10,6 +10,7 @@
     "learning.outline.alert.end.long": "Khóa học này sẽ kết thúc trong {timeRemain} ngày {courseEndDate}.",
     "learning.outline.alert.end.calendar": "Đừng quên thêm lời nhắc vào lịch!",
     "instructorToolbar.pageBanner.courseHasNotStarted": "Người học chưa có quyền truy cập vào khóa học này. Khóa học bắt đầu vào {date}.",
+    "instructorToolbar.text.viewIn": "Xem khóa học tại:",
     "learning.enrollment.alert": "Bạn phải đăng ký tham gia khóa học để xem nội dung khóa học.",
     "learning.staff.enrollment.alert": "Bạn đang xem khóa học này với vai trò của Staff, và bạn không tham gia khóa học.",
     "learning.enrollment.enrollNow.Inline": "Đăng ký ngay",
